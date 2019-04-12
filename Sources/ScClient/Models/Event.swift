@@ -48,11 +48,11 @@ class Channel : HandyJSON{
 
 class AuthChannel : HandyJSON{
     var channel : String!
-    var data : ChannelData?
+    var data : String?
     
     init(channel : String, token: String?) {
         self.channel = channel
-        self.data = ChannelData(data: token)
+        self.data = token
     }
     
     required init() {
